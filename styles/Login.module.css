@@ -1,0 +1,128 @@
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 100vw;
+  max-height: 100vh
+}
+
+.container{
+  min-width: 600px;
+  height: 93vh;
+  background-color: #B9812E;
+  border-radius: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  float: right;
+  align-items: center;
+}
+.container-bg{
+  display: flex;
+  justify-content: center;
+  color: #805A13;
+}
+.image{
+  display: flex;
+  place-items: center;
+  margin: auto;
+}
+.welcome h1{
+  text-shadow: 5px 5px 0px #2F4118;
+  font-weight: 400;
+  font-size: 67px;
+  line-height: 80px;
+  color: #E6AE14;
+}
+.welcome{
+  width: 100%;
+  font-family: 'Russo One', sans-serif;
+  padding: auto;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.formlog {
+  margin: 25px;
+  width: 65%;
+
+}
+
+.formreg{
+  margin: 25px;
+  width: 65%;
+}
+
+.masuklog{
+  /* width: 30%; */
+  border: none;
+  background: #2D2E03;
+  color: white;
+  border-radius: 50px;
+  margin: 10 0 0 0px;
+  padding: 8px 30px;
+  float: right;
+  cursor: pointer;
+}
+
+.masuklog:hover {
+  background-color: #E6AE14;
+  color: black;
+
+}
+
+.masukreg{
+  /* width: 30%; */
+  border: none;
+  background: #2D2E03;
+  color: white;
+  border-radius: 50px;
+  margin: 10 0 0 0px;
+  padding: 8px 30px;
+  float: right;
+  cursor: pointer;
+}
+
+.masukreg:hover {
+  background-color: #E6AE14;
+  color: black;
+
+}
+
+.linkregister {
+  font-size: 18px;
+}
+
+.movebtn{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  padding: 30 0 0 0px;
+  line-height: 50px;
+  font-size: 15px;
+}
+.focus,.not{
+  text-align: center;
+  width: 160px;
+  height: 100%;
+  transition: all 0.3s ease-out;
+}
+div.focus{
+  background-color: #49380A;
+}
+div.not{
+  background-color: #D9D9D9;
+}
+#left{
+  border-radius: 25px 0 0 25px;  
+}
+#right{
+  border-radius: 0 25px 25px 0;
+}
+h2.focus{
+  margin: 0;
+  color: #CFA025;
+}
+h2.not{
+  margin: 0;
+  color: #49380A;
+}

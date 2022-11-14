@@ -1,0 +1,22 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #D4D762;
+}
+a:hover {
+  color: #2D2E03 !important;
+}
+a {
+  color: #E5AE14 !important;
+  text-decoration: none;
+}
+
+* {
+  font-family: 'Russo One', sans-serif;
+  box-sizing: border-box;
+}
+
+
+
+
