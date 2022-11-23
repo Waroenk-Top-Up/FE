@@ -6,6 +6,7 @@ body {
 }
 a:hover {
   color: #E5AE14 !important;
+  text-shadow: 3px 3px 6px #2D2E03;
 }
 a {
   color: #2D2E03 !important;
