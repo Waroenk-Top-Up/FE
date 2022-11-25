@@ -14,46 +14,65 @@ export default function Home() {
       </Head>
 
       {/* HOME */}
-      <div className={styles.image}>
-        <Image src={"/logo.svg"} width={200} height={120} />
-        <div className={styles.navbar}>
+      <nav className={styles.navbar}>
+        <div className={styles.image}>
+          <Image src={"/logo.svg"} width={130} height={130} />
+        </div>
+        <div>
           <ul>
             <a href="#">HOME</a>
-            <a href="#">GAMES</a>
-            <a href="#">HOW TO BUY?</a>
+            <a href="#2">GAMES</a>
+            <a href="#3">HOW TO BUY?</a>
           </ul>
         </div>
-      </div>
+      </nav>
       <div className={styles.title1}>
         <p>HALO GAMERS!</p>
       </div>
       <div className={styles.title2}>
         <p>Mari beli Diamond sekarang!!</p>
       </div>
+      {/* <section className={styles.character}>
+        <image><Image src={"/.svg"} fill className={styles.m1} /></image>
+        <image><Image src={"/.svg"} fill className={styles.m2} /></image>
+        <image><Image src={"/.svg"} fill className={styles.m3} /></image>
+        <image><Image src={"/.svg"} fill className={styles.g1} /></image>
+        <image><Image src={"/.svg"} fill className={styles.g2} /></image>
+        <image><Image src={"/.svg"} fill className={styles.g3} /></image>
+        <image><Image src={"/.svg"} fill className={styles.v1} /></image>
+        <image><Image src={"/.svg"} fill className={styles.v2} /></image>
+        <image><Image src={"/.svg"} fill className={styles.v3} /></image>
+      </section> */}
 
       {/* 3 GAMES */}
-      <div className={styles.container1}>
+      <div id="2" className={styles.container}>
         <header className={styles.title3}>
           <p>3 GAMES</p>
         </header>
         <main className={styles.wrapper}>
           <section>
             {/* <h1>Mobile Legends</h1> */}
-            <div className={styles.content}><Image src={"/ml.svg"} width={370} height={350} className={styles.ml}/></div>
+            <div className={styles.content}>
+              <Image src={"/ml.svg"} fill className={styles.ml} />
+            </div>
           </section>
           <section>
             {/* <h1>PUBG</h1> */}
-            <div className={styles.content}><Image src={"/genshin.svg"} width={370} height={350} className={styles.pubg}/></div>
+            <div className={styles.content}>
+              <Image src={"/genshin.svg"} fill className={styles.pubg} />
+            </div>
           </section>
           <section>
             {/* <h1>Call of Duty</h1> */}
-            <div className={styles.content}><Image src={"/valo.svg"} width={370} height={350} className={styles.valo}/></div>
+            <div className={styles.content}>
+              <Image src={"/valo.svg"} fill className={styles.valo} />
+            </div>
           </section>
         </main>
       </div>
 
       {/* HOW TO BUY */}
-      <div className={styles.container2}>
+      <div id="3" className={styles.container}>
         <header className={styles.title3}>
           <p>HOW TO BUY</p>
         </header>
@@ -66,20 +85,21 @@ export default function Home() {
               <li>
                 <p>
                   Anda bisa langsung menekan link “GAMES” untuk melihat 3 GAMES
-                  khusus yang telah kami sediakan. Lalu pilih satu Games yang Anda ingin Top-Up kan.
+                  khusus yang telah kami sediakan. Lalu pilih satu Games yang
+                  Anda ingin Top-Up kan.
                 </p>
               </li>
               <li>
                 <p>
-                  Selanjutnya Anda bisa langsung melengkapi kolom ID, lalu isi jumlah
-                  diamond sesuai yang Anda inginkan, lalu Anda isi ATM mana yang
-                  ingin Anda jadikan sebagai metode pembayaran.
+                  Selanjutnya Anda bisa langsung melengkapi kolom ID, lalu isi
+                  jumlah diamond sesuai yang Anda inginkan, lalu Anda isi ATM
+                  mana yang ingin Anda jadikan sebagai metode pembayaran.
                 </p>
               </li>
               <li>
                 <p>
-                  Jika Anda sudah yakin dengan seluruh yang Anda pilih, Anda bisa
-                  langsung tekan tombol “Beli sekarang” atau tekan tombol
+                  Jika Anda sudah yakin dengan seluruh yang Anda pilih, Anda
+                  bisa langsung tekan tombol “Beli sekarang” atau tekan tombol
                   “Kembali” jika Anda tidak yakin dengan yang Anda pilih.
                 </p>
               </li>
@@ -87,9 +107,9 @@ export default function Home() {
                 <p>
                   Proses pembayaran hampir selesai, tahap selanjutnya anda harus
                   menunggu sebentar lalu setelah muncul pernyataan bahwa
-                  pembayaran berhasil Anda bisa klik “Oke, kembali ke Home” untuk
-                  mengakhiri proses pembayaran dan Selamat Anda telah mendapatkan
-                  Diamond sesuai dengan yang Anda inginkan !!
+                  pembayaran berhasil Anda bisa klik “Oke, kembali ke Home”
+                  untuk mengakhiri proses pembayaran dan Selamat Anda telah
+                  mendapatkan Diamond sesuai dengan yang Anda inginkan !!
                 </p>
               </li>
             </ul>

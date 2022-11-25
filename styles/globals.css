@@ -3,6 +3,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: #D4D762;
+  scroll-behavior: smooth;
 }
 a:hover {
   color: #E5AE14 !important;
