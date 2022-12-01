@@ -1,6 +1,6 @@
 import { React } from "react";
 import Head from "next/head";
-import styles from "../styles/Payment.module.css";
+import styles from "../styles/GenshinImpact.module.css";
 import Image from "next/image";
 import { Form, Input } from "antd";
 const handleFinish=(data)=>{
