@@ -5,9 +5,9 @@ import Head from "next/head";
 import Footer from "../components/Footer";
 
 export default function Home() {
-  return (
+return(
     <>
-      {/* HOME */}
+      {/* head */}
       <Head>
         <title> Waroenk Top Up</title>
         <link rel="icon" href="/logo.svg"></link>
@@ -32,17 +32,35 @@ export default function Home() {
       <div className={styles.title2}>
         <p>Mari beli Diamond sekarang!!</p>
       </div>
-      {/* <section className={styles.character}>
-        <image><Image src={"/.svg"} fill className={styles.m1} /></image>
-        <image><Image src={"/.svg"} fill className={styles.m2} /></image>
-        <image><Image src={"/.svg"} fill className={styles.m3} /></image>
-        <image><Image src={"/.svg"} fill className={styles.g1} /></image>
-        <image><Image src={"/.svg"} fill className={styles.g2} /></image>
-        <image><Image src={"/.svg"} fill className={styles.g3} /></image>
-        <image><Image src={"/.svg"} fill className={styles.v1} /></image>
-        <image><Image src={"/.svg"} fill className={styles.v2} /></image>
-        <image><Image src={"/.svg"} fill className={styles.v3} /></image>
-      </section> */}
+      <section className={styles.character}>
+        <div>
+          <Image src={"/m1.svg"} fill className={styles.m1} />
+        </div>
+        <div>
+          <Image src={"/m2.svg"} fill className={styles.m2} />
+        </div>
+        <div>
+          <Image src={"/m3.svg"} fill className={styles.m3} />
+        </div>
+        <div>
+          <Image src={"/g1.svg"} fill className={styles.g1} />
+        </div>
+        <div>
+          <Image src={"/g2.svg"} fill className={styles.g2} />
+        </div>
+        <div>
+          <Image src={"/g3.svg"} fill className={styles.g3} />
+        </div>
+        <div>
+          <Image src={"/v1.svg"} fill className={styles.v1} />
+        </div>
+        <div>
+          <Image src={"/v2.svg"} fill className={styles.v2} />
+        </div>
+        <div>
+          <Image src={"/v3.svg"} fill className={styles.v3} />  
+        </div>
+      </section>
 
       {/* 3 GAMES */}
       <div id="2" className={styles.container}>

@@ -1,0 +1,146 @@
+.image {
+    margin: 20px;
+    padding-top: 5px;
+  }
+
+.navbar {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    background-color: #cea308;
+    box-shadow: 0px 3px 7px #2d2e03;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+  }
+  
+
+.navbar a {
+    margin-right: 70px;
+    font-size: 17px;
+  }
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    max-width: 95vw;
+    max-height: 100vh;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* .container1{
+
+} */
+
+.coloumn1{
+    width: 700px;
+    height: 230px;
+    margin: 180px 0px 0px 30px;
+    padding-left: 30px;
+    padding-top: 40px;
+    padding-right: 30px;
+    background-color: #B9812E;
+    border-radius: 20px;
+    font-size: 25px;  
+}
+
+.id {
+    margin: 10px auto;
+}
+
+.container p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+}
+
+.note1 {
+    font-size: 15px;
+    margin: auto;
+}
+
+.coloumn2 {
+    width: 700px;
+    height: 330px;
+    margin: 90px 0px 0px 30px;
+    padding-left: 30px;
+    padding-top: 40px;
+    padding-right: 30px;
+    background-color: #B9812E;
+    border-radius: 20px;
+    font-size: 25px;  
+ 
+}
+
+.coloumn3 {
+    width: 700px;
+    height: 330px;
+    margin: 90px 0px 0px 30px;
+    padding-left: 30px;
+    padding-top: 40px;
+    padding-right: 30px;
+    background-color: #B9812E;
+    border-radius: 20px;
+    font-size: 25px;  
+ 
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.container2{
+    width: 500px;
+    height: 800px;
+    margin-top: 120px;
+}
+
+.content{
+    position: relative;
+    margin: 60px auto 30px;
+    width: 370px;
+    height: 280px;
+} 
+
+.ml{
+    border-radius: 30px;
+}
+
+.game1 h1{
+    text-align: center;
+}
+
+.game1 p{
+    text-align: justify;
+}
+
+.button{
+    border: none;
+    display: flex;
+    background: #2D2E03;
+    color: white;
+    border-radius: 50px;
+    margin: 300px auto 50px;
+    padding: 2px 25px;
+    cursor: pointer;
+    font-size: 23px;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button:hover {
+    background-color: #E6AE14;
+    color: black;
+  
+}
+
+.button p{
+    margin: auto;
+}
+
+.cart{
+    padding-right: 15px;
+    /* color: aliceblue; */
+}

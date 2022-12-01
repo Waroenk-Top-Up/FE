@@ -22,7 +22,7 @@
 }
 
 .title1 {
-  margin-top: 150px;
+  margin-top: 140px;
 }
 
 .title1 p {
@@ -62,18 +62,29 @@
   } */
 
 .character{
+  position: relative;
   overflow: hidden;
   display: flex;
-  height: 500px;
-  width: 1400px;
-  margin: 0px auto;
+  height: 150px;
+  width: 1300px;
+  margin: auto;
+  /* border- */
 }
 
-.character image{
+.character div{
   height: 130;
-  min-width: 300px;
-  margin-left: 100px;
-  animation: slide 15s linear infinite;
+  min-width: 270px;
+  /* border-radius: 30px; */
+  animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate3d( 0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-2500px, 0, 0); /* The image width */
+  }
 }
 
 .title3 {
@@ -112,11 +123,9 @@
 
 .content {
   position: relative;
-  background-color: rgb(226, 143, 8);
   width: 370px;
   height: 280px;
   transition: transform ease-in-out 0.2s;
-  border-radius: 30px;
 }
 
 .content:hover {
@@ -154,13 +163,13 @@
   width: 250px;
   height: 50px;
   background-color: #dbac05;
-  border-radius: 30px;
+  border-radius: 20px;
   box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .title4 p {
   padding-top: 10px;
-  font-size: 25px;
+  font-size: 23px;
   text-align: center;
   color: rgb(131, 74, 0);
 }
@@ -187,5 +196,5 @@
   position: relative;
   width: 0;
   height: 5em;
-  margin-top: 100px;
+  margin-top: 20px;
 }
