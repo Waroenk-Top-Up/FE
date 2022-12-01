@@ -3,7 +3,9 @@ import Head from "next/head";
 import styles from "../styles/Payment.module.css";
 import Image from "next/image";
 import { Form, Input } from "antd";
-
+const handleFinish=(data)=>{
+  console.log(data)
+}
 export default function Payment() {
   return (
     <>
@@ -29,19 +31,28 @@ export default function Payment() {
           <div className={styles.coloumn1}>
             <p>Masukkan ID Game Anda</p>
             <div className={styles.id}>
-              <Form.Item
-                name="id"
-                size="70px"
-                rules={[
-                  {
-                    required: true,
-                    message: "Username is not filled yet!",
-                  },
-                  { min: 8 },
-                ]}
-              >
-                <Input />
-              </Form.Item>
+              <Form 
+                onFinish={handleFinish}
+                autoComplete="off">
+                <Form.Item
+                  name="id"
+                  size="70px"
+                  rules={[
+                    {
+                      required: true,
+                      message: "ID is not filled yet!",
+                    },
+                    { min: 8 },
+                  ]}
+                >
+                  <Input />
+                </Form.Item>
+                <Form.Item>
+                  <button className={styles.buttonid} type="submit">
+                    OKE
+                  </button>
+                </Form.Item>
+              </Form>
             </div>
             <div className={styles.note1}>
               <p>*ID yang tertera pada profil game Anda</p>
@@ -50,10 +61,108 @@ export default function Payment() {
 
           <div className={styles.coloumn2}>
             <p>Pilih diamond yang Anda inginkan</p>
+            <main className={styles.container3}>
+              <div className={styles.diamond1}>
+                <div className={styles.diamond}>
+                  <Image
+                    src={"/diamond.svg"}
+                    fill
+                    className={styles.diamondA}
+                  />
+                  <p>5 Diamond</p>
+                </div>
+              </div>
+
+              <div className={styles.diamond1}>
+                <div className={styles.diamond}>
+                  <Image
+                    src={"/diamond.svg"}
+                    fill
+                    className={styles.diamondA}
+                  />
+                  <p>10 Diamond</p>
+                </div>
+              </div>
+
+              <div className={styles.diamond1}>
+                <div className={styles.diamond}>
+                  <Image
+                    src={"/diamond.svg"}
+                    fill
+                    className={styles.diamondA}
+                  />
+                  <p>20 Diamond</p>
+                </div>
+              </div>
+
+              <div className={styles.diamond1}>
+                <div className={styles.diamond}>
+                  <Image
+                    src={"/diamond.svg"}
+                    fill
+                    className={styles.diamondA}
+                  />
+                  <p>30 Diamond</p>
+                </div>
+              </div>
+
+              <div className={styles.diamond1}>
+                <div className={styles.diamond}>
+                  <Image
+                    src={"/diamond.svg"}
+                    fill
+                    className={styles.diamondA}
+                  />
+                  <p>40 Diamond</p>
+                </div>
+              </div>
+
+              <div className={styles.diamond1}>
+                <div className={styles.diamond}>
+                  <Image
+                    src={"/diamond.svg"}
+                    fill
+                    className={styles.diamondA}
+                  />
+                  <p>60 Diamond</p>
+                </div>
+              </div>
+
+              <div className={styles.diamond1}>
+                <div className={styles.diamond}>
+                  <Image
+                    src={"/diamond.svg"}
+                    fill
+                    className={styles.diamondA}
+                  />
+                  <p>120 Diamond</p>
+                </div>
+              </div>
+
+              <div className={styles.diamond1}>
+                <div className={styles.diamond}>
+                  <Image
+                    src={"/diamond.svg"}
+                    fill
+                    className={styles.diamondA}
+                  />
+                  <p>200 Diamond</p>
+                </div>
+              </div>
+            </main>
           </div>
 
           <div className={styles.coloumn3}>
             <p>Pilih metode pembayaran</p>
+            <main className={styles.container4}>
+              <div className={styles.bank}>
+                <Image src={"/bri.svg"} fill className={styles.bri} />
+              </div>
+
+              <div className={styles.bank}>
+                <Image src={"/bca.svg"} fill className={styles.bva} />
+              </div>
+            </main>
           </div>
         </div>
 

@@ -39,7 +39,7 @@
 
 .coloumn1{
     width: 700px;
-    height: 230px;
+    height: 300px;
     margin: 180px 0px 0px 30px;
     padding-left: 30px;
     padding-top: 40px;
@@ -59,6 +59,24 @@
     margin: auto;
 }
 
+.buttonid{
+    /* width: 30%; */
+    border: none;
+    background: #2D2E03;
+    color: white;
+    border-radius: 50px;
+    margin: 0 0 0 0px;
+    padding: 8px 30px;
+    float: right;
+    cursor: pointer;
+}
+
+.buttonid:hover {
+    background-color: #E6AE14;
+    color: black;
+  
+  }
+
 .note1 {
     font-size: 15px;
     margin: auto;
@@ -66,8 +84,8 @@
 
 .coloumn2 {
     width: 700px;
-    height: 330px;
-    margin: 90px 0px 0px 30px;
+    height: 400px;
+    margin: 70px 0px 0px 30px;
     padding-left: 30px;
     padding-top: 40px;
     padding-right: 30px;
@@ -77,17 +95,83 @@
  
 }
 
+.container3{
+    display: grid;
+    grid-template-columns: 0.7fr 0.7fr 0.7fr 0.7fr;
+    gap: 20px 0px;
+}
+
+.diamond1{
+    width: 120px;
+    height: 120px;
+    margin: 0px;
+    display: flex;
+    border: solid #2D2E03;
+    text-align: center;
+    font-size: 13px;
+    border-radius: 20px;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+.diamond1:hover{
+    background-color: #E6AE14;
+}
+.diamond{
+    width: 90px;
+    height: 90px;
+    position: relative;
+}
+
+.diamondA{
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+
 .coloumn3 {
     width: 700px;
     height: 330px;
-    margin: 90px 0px 0px 30px;
+    margin: 70px 0px 0px 30px;
     padding-left: 30px;
     padding-top: 40px;
     padding-right: 30px;
     background-color: #B9812E;
     border-radius: 20px;
     font-size: 25px;  
- 
+}
+
+.container4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 0px;
+    justify-items: center;
+}
+
+
+.bank{
+    width: 250px;
+    height: 180px;
+    margin: 0px;
+    border: solid #2D2E03;
+    font-size: 13px;
+    border-radius: 20px;
+    padding-top: 5px;
+    position: relative;
+}
+
+.bank:hover{
+    background-color: #E6AE14;
+}
+
+.bri{
+    width: 250px;
+    height: 180px;
+}
+
+.bca{
+    width: 250px;
+    height: 180px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
