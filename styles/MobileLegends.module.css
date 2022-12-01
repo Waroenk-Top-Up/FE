@@ -40,7 +40,7 @@
 .coloumn1{
     width: 700px;
     height: 300px;
-    margin: 180px 0px 0px 30px;
+    margin: 140px 0px 0px 30px;
     padding-left: 30px;
     padding-top: 40px;
     padding-right: 30px;
@@ -85,7 +85,7 @@
 .coloumn2 {
     width: 700px;
     height: 400px;
-    margin: 70px 0px 0px 30px;
+    margin: 50px 0px 0px 30px;
     padding-left: 30px;
     padding-top: 40px;
     padding-right: 30px;
@@ -132,7 +132,7 @@
 .coloumn3 {
     width: 700px;
     height: 330px;
-    margin: 70px 0px 0px 30px;
+    margin: 50px 0px 0px 30px;
     padding-left: 30px;
     padding-top: 40px;
     padding-right: 30px;
@@ -179,7 +179,7 @@
 .container2{
     width: 500px;
     height: 800px;
-    margin-top: 120px;
+    margin-top: 80px;
 }
 
 .content{
@@ -207,7 +207,7 @@
     background: #2D2E03;
     color: white;
     border-radius: 50px;
-    margin: 300px auto 50px;
+    margin: 150px auto 50px;
     padding: 2px 25px;
     cursor: pointer;
     font-size: 23px;

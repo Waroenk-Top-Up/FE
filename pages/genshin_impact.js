@@ -3,9 +3,9 @@ import Head from "next/head";
 import styles from "../styles/GenshinImpact.module.css";
 import Image from "next/image";
 import { Form, Input } from "antd";
-const handleFinish=(data)=>{
-  console.log(data)
-}
+const handleFinish = (data) => {
+  console.log(data);
+};
 export default function Payment() {
   return (
     <>
@@ -31,9 +31,7 @@ export default function Payment() {
           <div className={styles.coloumn1}>
             <p>Masukkan ID Game Anda</p>
             <div className={styles.id}>
-              <Form 
-                onFinish={handleFinish}
-                autoComplete="off">
+              <Form onFinish={handleFinish} autoComplete="off">
                 <Form.Item
                   name="id"
                   size="70px"
@@ -64,89 +62,57 @@ export default function Payment() {
             <main className={styles.container3}>
               <div className={styles.diamond1}>
                 <div className={styles.diamond}>
-                  <Image
-                    src={"/diamond.svg"}
-                    fill
-                    className={styles.diamondA}
-                  />
-                  <p>5 Diamond</p>
+                  <Image src={"/gi1.svg"} fill className={styles.diamondA} />
+                  <p>5 Genesis Crystals</p>
                 </div>
               </div>
 
               <div className={styles.diamond1}>
                 <div className={styles.diamond}>
-                  <Image
-                    src={"/diamond.svg"}
-                    fill
-                    className={styles.diamondA}
-                  />
-                  <p>10 Diamond</p>
+                  <Image src={"/gi1.svg"} fill className={styles.diamondA} />
+                  <p>10 Genesis Crystals</p>
                 </div>
               </div>
 
               <div className={styles.diamond1}>
                 <div className={styles.diamond}>
-                  <Image
-                    src={"/diamond.svg"}
-                    fill
-                    className={styles.diamondA}
-                  />
-                  <p>20 Diamond</p>
+                  <Image src={"/gi4.svg"} fill className={styles.diamondA} />
+                  <p>20 Genesis Crystals</p>
                 </div>
               </div>
 
               <div className={styles.diamond1}>
                 <div className={styles.diamond}>
-                  <Image
-                    src={"/diamond.svg"}
-                    fill
-                    className={styles.diamondA}
-                  />
-                  <p>30 Diamond</p>
+                  <Image src={"/gi4.svg"} fill className={styles.diamondA} />
+                  <p>30 Genesis Crystals</p>
                 </div>
               </div>
 
               <div className={styles.diamond1}>
                 <div className={styles.diamond}>
-                  <Image
-                    src={"/diamond.svg"}
-                    fill
-                    className={styles.diamondA}
-                  />
-                  <p>40 Diamond</p>
+                  <Image src={"/gi2.svg"} fill className={styles.diamondA} />
+                  <p>40 Genesis Crystals</p>
                 </div>
               </div>
 
               <div className={styles.diamond1}>
                 <div className={styles.diamond}>
-                  <Image
-                    src={"/diamond.svg"}
-                    fill
-                    className={styles.diamondA}
-                  />
-                  <p>60 Diamond</p>
+                  <Image src={"/gi2.svg"} fill className={styles.diamondA} />
+                  <p>60 Genesis Crystals</p>
                 </div>
               </div>
 
               <div className={styles.diamond1}>
                 <div className={styles.diamond}>
-                  <Image
-                    src={"/diamond.svg"}
-                    fill
-                    className={styles.diamondA}
-                  />
-                  <p>120 Diamond</p>
+                  <Image src={"/gi3.svg"} fill className={styles.diamondA} />
+                  <p>120 Genesis Crystals</p>
                 </div>
               </div>
 
               <div className={styles.diamond1}>
                 <div className={styles.diamond}>
-                  <Image
-                    src={"/diamond.svg"}
-                    fill
-                    className={styles.diamondA}
-                  />
-                  <p>200 Diamond</p>
+                  <Image src={"/gi3.svg"} fill className={styles.diamondA} />
+                  <p>200 Genesis Crystals</p>
                 </div>
               </div>
             </main>
@@ -169,23 +135,28 @@ export default function Payment() {
         <div className={styles.container2}>
           <div className={styles.game1}>
             <div className={styles.content}>
-              <Image src={"/ml.svg"} fill className={styles.ml} />
+              <Image src={"/genshin.svg"} fill className={styles.genshin} />
             </div>
-            <h1>MOBILE LEGENDS</h1>
+            <h1>GENSHIN IMPACT</h1>
             <p>
-              Mobile Legends adalah permainan MOBA yang dirancang untuk ponsel.
-              Kedua tim masing-masing berisi lima orang berjuang untuk mencapai
-              dan menghancurkan markas musuh sambil mempertahankan markas mereka
-              sendiri untuk mengendalikan tiga jalur, yang dikenal sebagai jalur
-              "atas", "tengah" dan "bawah", yang menghubung ke setiap markas.
+              Genshin Impact adalah gim open-world yang dikembangkan oleh
+              pengembang asal China, miHoYo. Dalam gameplay-nya, Genshin Impact
+              memiliki arena dunia fantasi terbuka. Gim ini juga hanya bisa
+              dimainkan secara online saja dengan fitur mode multiplayer yang
+              memungkinkan kamu untuk bermain dengan maksimal empat orang
+              sekaligus. 
               <br></br>
               <br></br>
-              Pada dasarnya, karakter dalam Mobile Legends dibedakan menjadi 6
-              peran (role) di antaranya: marksman, fighter, tank, mage, assassin
-              dan support. Setiap peran mempunyai spesialisasi dan kemampuan
-              yang unik. Total jumlah hero per November 2021, baik pada server
-              orisinal (original server) maupun lanjutan (advance server) adalah
-              107 hero.
+              Dalam gim Genshin Impact, terdapat 7 elemen yang akan dimiliki
+              oleh karakter yakni Pyro (Fire), Hydro (Water), Anemo (Wind),
+              Electro (Lightning), Dendro (Grass), Cryo (Ice), dan Geo (Rock).
+              Saat ini terdapat 23 karakter yang dapat dimainkan, setiap
+              karakter memiliki kekuatan, dan skill unik mereka sendiri. Setiap
+              karakter telah dilengkapi dengan Normal Attack, Elemental Skill,
+              Elemental Burst, Passive Talent 1, Passive Talent 2 dan Passive
+              Talent 3. Beberapa kemampuan tersebut dapat dimaksimalkan untuk
+              setiap karakter. Kalian bisa mengeksplorasi terlebih dahulu setiap
+              karakter untuk menemukan yang terbaik.
             </p>
           </div>
           <div>

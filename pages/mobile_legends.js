@@ -3,9 +3,9 @@ import Head from "next/head";
 import styles from "../styles/MobileLegends.module.css";
 import Image from "next/image";
 import { Form, Input } from "antd";
-const handleFinish=(data)=>{
-  console.log(data)
-}
+const handleFinish = (data) => {
+  console.log(data);
+};
 export default function Payment() {
   return (
     <>
@@ -31,9 +31,7 @@ export default function Payment() {
           <div className={styles.coloumn1}>
             <p>Masukkan ID Game Anda</p>
             <div className={styles.id}>
-              <Form 
-                onFinish={handleFinish}
-                autoComplete="off">
+              <Form onFinish={handleFinish} autoComplete="off">
                 <Form.Item
                   name="id"
                   size="70px"
@@ -177,7 +175,13 @@ export default function Payment() {
               Kedua tim masing-masing berisi lima orang berjuang untuk mencapai
               dan menghancurkan markas musuh sambil mempertahankan markas mereka
               sendiri untuk mengendalikan tiga jalur, yang dikenal sebagai jalur
-              "atas", "tengah" dan "bawah", yang menghubung ke setiap markas.
+              "atas", "tengah" dan "bawah", yang menghubung ke setiap markas. Di
+              masing-masing tim, ada lima pemain yang mengendalikan avatar
+              sendiri-sendiri, yang dikenal sebagai "hero", dari perangkat
+              mereka sendiri. Karakter lemah yang dikendalikan komputer disebut
+              "minion", yang bersarang di markas tim lalu menyebar ke tiga jalur
+              dan melawan menara serta lawan yang menghadang. Mengumpulkan EXP
+              berguna untuk menaikkan level hero saat permainan berlangsung.
               <br></br>
               <br></br>
               Pada dasarnya, karakter dalam Mobile Legends dibedakan menjadi 6

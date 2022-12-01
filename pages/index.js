@@ -5,18 +5,16 @@ import Head from "next/head";
 import { Form, Input } from "antd";
 import Footer from "../components/Footer";
 import { useState } from "react";
+import { useRouter } from "next/router";
 
-const handleFinish=(data)=>{
-  console.log(data)
-}
+const handleFinish = (data) => {
+  console.log(data);
+};
 // REGISTER PAGE
-const Register = function () {
+const Register = function ({ goToHome }) {
   return (
     <div className={styles.formreg}>
-      <Form 
-      onFinish={handleFinish}
-      autoComplete="off">
-
+      <Form onFinish={handleFinish} autoComplete="off">
         {/* EMAIL */}
         <Form.Item
           name="email"
@@ -40,7 +38,7 @@ const Register = function () {
               required: true,
               message: "Please input your Password!",
             },
-            {min:8}
+            { min: 8 },
           ]}
         >
           <Input.Password placeholder="Password" />
@@ -60,9 +58,13 @@ const Register = function () {
           <Input placeholder="Username" />
         </Form.Item>
         <Form.Item>
-            <button className={styles.masukreg} type="submit">
-              DAFTAR
-            </button>
+          <button
+            onClick={() => goToHome()}
+            className={styles.masukreg}
+            type="submit"
+          >
+            DAFTAR
+          </button>
         </Form.Item>
       </Form>
     </div>
@@ -70,13 +72,10 @@ const Register = function () {
 };
 
 // LOGIN PAGE
-const Login = function () {
+const Login = function ({ goToHome }) {
   return (
     <div className={styles.formlog}>
-      <Form
-      onFinish={handleFinish}
-      >
-
+      <Form onFinish={handleFinish}>
         {/* EMAIL */}
         <Form.Item
           name="email"
@@ -100,28 +99,31 @@ const Login = function () {
               required: true,
               message: "Please input your Password!",
             },
-            {min:8}
-
+            { min: 8 },
           ]}
         >
           <Input.Password placeholder="Password" />
         </Form.Item>
         <Form.Item>
-            <button className={styles.masuklog} type="submit">
-              MASUK
-            </button>
+          <button
+            onClick={() => goToHome()}
+            className={styles.masuklog}
+            type="submit"
+          >
+            MASUK
+          </button>
         </Form.Item>
       </Form>
     </div>
   );
 };
 
-
 export default function LoginPage() {
+  const router = useRouter();
+  const goToHome = () => router.push("/home");
   const [onLogin, setLogin] = useState();
   return (
     <>
-
       {/* TITLE */}
       <Head>
         <title> Waroenk Top Up</title>
@@ -176,7 +178,11 @@ export default function LoginPage() {
               </a>
             </div>
           </span>
-          {onLogin ? <Login /> : <Register />}
+          {onLogin ? (
+            <Login goToHome={goToHome} />
+          ) : (
+            <Register goToHome={goToHome} />
+          )}
 
           {/* QUICK ACCESS REG */}
           {onLogin ? (

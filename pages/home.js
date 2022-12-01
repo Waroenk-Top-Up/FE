@@ -3,9 +3,10 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Head from "next/head";
 import Footer from "../components/Footer";
+import Link from "next/link";
 
 export default function Home() {
-return(
+  return (
     <>
       {/* head */}
       <Head>
@@ -58,7 +59,7 @@ return(
           <Image src={"/v2.svg"} fill className={styles.v2} />
         </div>
         <div>
-          <Image src={"/v3.svg"} fill className={styles.v3} />  
+          <Image src={"/v3.svg"} fill className={styles.v3} />
         </div>
       </section>
 
@@ -71,19 +72,25 @@ return(
           <section>
             {/* <h1>Mobile Legends</h1> */}
             <div className={styles.content}>
-              <Image src={"/ml.svg"} fill className={styles.ml} />
+              <Link href={"/mobile_legends"}>
+                  <Image src={"/ml.svg"} fill className={styles.ml} />
+              </Link>
             </div>
           </section>
           <section>
             {/* <h1>PUBG</h1> */}
             <div className={styles.content}>
-              <Image src={"/genshin.svg"} fill className={styles.pubg} />
+              <Link href={"/genshin_impact"}>
+                  <Image src={"/genshin.svg"} fill className={styles.pubg} />
+              </Link>
             </div>
           </section>
           <section>
             {/* <h1>Call of Duty</h1> */}
             <div className={styles.content}>
-              <Image src={"/valo.svg"} fill className={styles.valo} />
+              <Link href={"/valorant"}>
+                  <Image src={"/valo.svg"} fill className={styles.valo} />
+              </Link>
             </div>
           </section>
         </main>

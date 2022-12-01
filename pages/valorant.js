@@ -3,9 +3,9 @@ import Head from "next/head";
 import styles from "../styles/Valorant.module.css";
 import Image from "next/image";
 import { Form, Input } from "antd";
-const handleFinish=(data)=>{
-  console.log(data)
-}
+const handleFinish = (data) => {
+  console.log(data);
+};
 export default function Payment() {
   return (
     <>
@@ -31,9 +31,7 @@ export default function Payment() {
           <div className={styles.coloumn1}>
             <p>Masukkan ID Game Anda</p>
             <div className={styles.id}>
-              <Form 
-                onFinish={handleFinish}
-                autoComplete="off">
+              <Form onFinish={handleFinish} autoComplete="off">
                 <Form.Item
                   name="id"
                   size="70px"
@@ -65,88 +63,88 @@ export default function Payment() {
               <div className={styles.diamond1}>
                 <div className={styles.diamond}>
                   <Image
-                    src={"/diamond.svg"}
+                    src={"/point.svg"}
                     fill
                     className={styles.diamondA}
                   />
-                  <p>5 Diamond</p>
+                  <p>5 Point</p>
                 </div>
               </div>
 
               <div className={styles.diamond1}>
                 <div className={styles.diamond}>
                   <Image
-                    src={"/diamond.svg"}
+                    src={"/point.svg"}
                     fill
                     className={styles.diamondA}
                   />
-                  <p>10 Diamond</p>
+                  <p>10 Point</p>
                 </div>
               </div>
 
               <div className={styles.diamond1}>
                 <div className={styles.diamond}>
                   <Image
-                    src={"/diamond.svg"}
+                    src={"/point.svg"}
                     fill
                     className={styles.diamondA}
                   />
-                  <p>20 Diamond</p>
+                  <p>20 Point</p>
                 </div>
               </div>
 
               <div className={styles.diamond1}>
                 <div className={styles.diamond}>
                   <Image
-                    src={"/diamond.svg"}
+                    src={"/point.svg"}
                     fill
                     className={styles.diamondA}
                   />
-                  <p>30 Diamond</p>
+                  <p>30 Point</p>
                 </div>
               </div>
 
               <div className={styles.diamond1}>
                 <div className={styles.diamond}>
                   <Image
-                    src={"/diamond.svg"}
+                    src={"/point.svg"}
                     fill
                     className={styles.diamondA}
                   />
-                  <p>40 Diamond</p>
+                  <p>40 Point</p>
                 </div>
               </div>
 
               <div className={styles.diamond1}>
                 <div className={styles.diamond}>
                   <Image
-                    src={"/diamond.svg"}
+                    src={"/point.svg"}
                     fill
                     className={styles.diamondA}
                   />
-                  <p>60 Diamond</p>
+                  <p>60 Point</p>
                 </div>
               </div>
 
               <div className={styles.diamond1}>
                 <div className={styles.diamond}>
                   <Image
-                    src={"/diamond.svg"}
+                    src={"/point.svg"}
                     fill
                     className={styles.diamondA}
                   />
-                  <p>120 Diamond</p>
+                  <p>120 Point</p>
                 </div>
               </div>
 
               <div className={styles.diamond1}>
                 <div className={styles.diamond}>
                   <Image
-                    src={"/diamond.svg"}
+                    src={"/point.svg"}
                     fill
                     className={styles.diamondA}
                   />
-                  <p>200 Diamond</p>
+                  <p>200 Point</p>
                 </div>
               </div>
             </main>
@@ -169,23 +167,27 @@ export default function Payment() {
         <div className={styles.container2}>
           <div className={styles.game1}>
             <div className={styles.content}>
-              <Image src={"/ml.svg"} fill className={styles.ml} />
+              <Image src={"/valo.svg"} fill className={styles.valo} />
             </div>
-            <h1>MOBILE LEGENDS</h1>
+            <h1>VALORANT</h1>
             <p>
-              Mobile Legends adalah permainan MOBA yang dirancang untuk ponsel.
-              Kedua tim masing-masing berisi lima orang berjuang untuk mencapai
-              dan menghancurkan markas musuh sambil mempertahankan markas mereka
-              sendiri untuk mengendalikan tiga jalur, yang dikenal sebagai jalur
-              "atas", "tengah" dan "bawah", yang menghubung ke setiap markas.
-              <br></br>
-              <br></br>
-              Pada dasarnya, karakter dalam Mobile Legends dibedakan menjadi 6
-              peran (role) di antaranya: marksman, fighter, tank, mage, assassin
-              dan support. Setiap peran mempunyai spesialisasi dan kemampuan
-              yang unik. Total jumlah hero per November 2021, baik pada server
-              orisinal (original server) maupun lanjutan (advance server) adalah
-              107 hero.
+              Valorant adalah penembak taktis berbasis tim dan penembak orang
+              pertama yang diatur dalam dekat masa depan. Pemain
+              bermain sebagai salah satu dari sekumpulan agen, karakter yang
+              dirancang berdasarkan beberapa negara dan budaya di seluruh
+              dunia. Dalam mode permainan utama, pemain ditugaskan ke tim
+              menyerang atau bertahan dengan masing-masing tim memiliki lima
+              pemain di dalamnya. Senjata dan biaya kemampuan
+              lainnya dapat dibeli menggunakan sistem ekonomi dalam permainan
+              yang memberikan uang berdasarkan hasil putaran sebelumnya,
+              pembunuhan apa pun yang menjadi tanggung jawab pemain, dan
+              tindakan apa pun yang diambil dengan spike. Agen yang berbeda
+              memungkinkan pemain menemukan lebih banyak cara untuk memasang
+              Spike dan gaya pada musuh dengan scrappers, ahli strategi, dan
+              pemburu dari setiap deskripsi. Saat ini, menawarkan 17 agen untuk
+              dipilih. Mereka adalah Brimstone, Phoenix, Sage, Sova,
+              Viper, Cypher, Reyna, Killjoy, Breach, Omen, Jett, Raze, Skye,
+              Yoru, Astra, KAY/O, dan Chamber.
             </p>
           </div>
           <div>
