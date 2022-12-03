@@ -8,13 +8,11 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      {/* head */}
       <Head>
         <title> Waroenk Top Up</title>
         <link rel="icon" href="/logo.svg"></link>
       </Head>
 
-      {/* HOME */}
       <nav className={styles.navbar}>
         <div className={styles.image}>
           <Image src={"/logo.svg"} width={130} height={130} />
@@ -63,14 +61,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 3 GAMES */}
       <div id="2" className={styles.container}>
         <header className={styles.title3}>
           <p>3 GAMES</p>
         </header>
         <main className={styles.wrapper}>
           <section>
-            {/* <h1>Mobile Legends</h1> */}
             <div className={styles.content}>
               <Link href={"/mobile_legends"}>
                   <Image src={"/ml.svg"} fill className={styles.ml} />
@@ -78,7 +74,6 @@ export default function Home() {
             </div>
           </section>
           <section>
-            {/* <h1>PUBG</h1> */}
             <div className={styles.content}>
               <Link href={"/genshin_impact"}>
                   <Image src={"/genshin.svg"} fill className={styles.pubg} />
@@ -86,7 +81,6 @@ export default function Home() {
             </div>
           </section>
           <section>
-            {/* <h1>Call of Duty</h1> */}
             <div className={styles.content}>
               <Link href={"/valorant"}>
                   <Image src={"/valo.svg"} fill className={styles.valo} />
@@ -96,7 +90,6 @@ export default function Home() {
         </main>
       </div>
 
-      {/* HOW TO BUY */}
       <div id="3" className={styles.container}>
         <header className={styles.title3}>
           <p>HOW TO BUY</p>
@@ -141,7 +134,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* FOOTER */}
       <div className={styles.footer}>
         <footer style={{ textAlign: "center", fontSize: "15px" }}>
           <Footer />
