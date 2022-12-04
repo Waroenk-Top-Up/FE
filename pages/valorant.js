@@ -9,13 +9,11 @@ const handleFinish = (data) => {
 export default function Payment() {
   return (
     <>
-      {/* head */}
       <Head>
         <title> Waroenk Top Up</title>
         <link rel="icon" href="/logo.svg"></link>
       </Head>
 
-      {/* navbar */}
       <nav className={styles.navbar}>
         <div className={styles.image}>
           <Image src={"/logo.svg"} width={130} height={130} />
@@ -25,7 +23,6 @@ export default function Payment() {
         </div>
       </nav>
 
-      {/* payment  */}
       <div className={styles.wrapper}>
         <div className={styles.container1}>
           <div className={styles.coloumn1}>

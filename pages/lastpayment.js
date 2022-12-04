@@ -6,6 +6,11 @@ import Image from "next/image";
 export default function lastpayment() {
   return (
     <>
+      <Head>
+        <title> Waroenk Top Up</title>
+        <link rel="icon" href="/logo.svg"></link>
+      </Head>
+
       <div className={styles.wrapper}>
         <div className={styles.container}>
           <div className={styles.image}>
@@ -35,7 +40,7 @@ export default function lastpayment() {
               <div className={styles.proof4}></div>
             </div>
             <button className={styles.back} type="submit">
-                <a href="home">Oke, back to Home</a>
+              <a href="home">Oke, back to Home</a>
             </button>
           </div>
         </div>
