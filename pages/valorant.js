@@ -58,7 +58,7 @@ export default function Payment() {
           </div>
 
           <div className={styles.coloumn2}>
-            <p>Pilih diamond yang Anda inginkan</p>
+            <p>Pilih sesuai yang Anda inginkan</p>
             <main className={styles.container3}>
               <div className={styles.diamond1}>
                 <div className={styles.diamond}>

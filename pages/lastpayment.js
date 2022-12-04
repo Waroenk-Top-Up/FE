@@ -23,15 +23,15 @@ export default function lastpayment() {
               <div className={styles.proof1}></div>
             </div>
             <div className={styles.id}>
-              <p>ID Game</p>
+              <p>Jumlah Top Up</p>
               <div className={styles.proof2}></div>
             </div>
             <div className={styles.id}>
-              <p>ID Game</p>
+              <p>Metode Pembayaran</p>
               <div className={styles.proof3}></div>
             </div>
             <div className={styles.id}>
-              <p>ID Game</p>
+              <p>Total</p>
               <div className={styles.proof4}></div>
             </div>
             <button className={styles.back} type="submit">
