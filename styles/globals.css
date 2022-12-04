@@ -6,11 +6,11 @@ body {
   scroll-behavior: smooth;
 }
 a:hover {
-  color: #E5AE14 !important;
+  color: #f7cf63 !important;
   text-shadow: 3px 3px 6px #2D2E03;
 }
 a {
-  color: #2D2E03 !important;
+  color: #000000 !important;
   text-decoration: none;
 }
 

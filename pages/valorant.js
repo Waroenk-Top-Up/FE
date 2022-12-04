@@ -199,7 +199,7 @@ export default function Payment() {
                   height={60}
                   className={styles.cart}
                 />
-                <p>Beli sekarang!</p>
+                <p><a href="lastpayment">Beli sekarang!</a></p>
               </button>
             </Form.Item>
           </div>

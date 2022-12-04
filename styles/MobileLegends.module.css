@@ -29,10 +29,6 @@
     max-height: 100vh;
 }
 
-/* .container1{
-
-} */
-
 .coloumn1{
     width: 700px;
     height: 300px;
@@ -56,7 +52,6 @@
 }
 
 .buttonid{
-    /* width: 30%; */
     border: none;
     background: #2D2E03;
     color: white;
@@ -199,7 +194,7 @@
     border: none;
     display: flex;
     background: #2D2E03;
-    color: white;
+    color: rgb(7, 7, 7);
     border-radius: 50px;
     margin: 150px auto 50px;
     padding: 2px 25px;
@@ -220,5 +215,4 @@
 
 .cart{
     padding-right: 15px;
-    /* color: aliceblue; */
 }
