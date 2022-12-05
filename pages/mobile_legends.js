@@ -1,12 +1,16 @@
-import { React } from "react";
+import { React, useState } from "react";
 import Head from "next/head";
-import styles from "../styles/MobileLegends.module.css";
+import styles from "../styles/GenshinImpact.module.css";
 import Image from "next/image";
 import { Form, Input } from "antd";
+const data = require("../harga.json");
+
 const handleFinish = (data) => {
   console.log(data);
 };
 export default function Payment() {
+  const [price, setPrice] = useState(0);
+  console.log(data);
   return (
     <>
       {/* head */}
@@ -60,93 +64,85 @@ export default function Payment() {
           <div className={styles.coloumn2}>
             <p>Pilih sesuai yang Anda inginkan</p>
             <main className={styles.container3}>
-              <div className={styles.diamond1}>
+              <section
+                onClick={() => setPrice(data.currency5.price)}
+                className={styles.diamond1}
+              >
                 <div className={styles.diamond}>
-                  <Image
-                    src={"/diamond.svg"}
-                    fill
-                    className={styles.diamondA}
-                  />
+                  <Image src={"/diamond.svg"} fill className={styles.diamondA} />
                   <p>5 Diamond</p>
                 </div>
-              </div>
+              </section>
 
-              <div className={styles.diamond1}>
+              <section
+                onClick={() => setPrice(data.currency10.price)}
+                className={styles.diamond1}
+              >
                 <div className={styles.diamond}>
-                  <Image
-                    src={"/diamond.svg"}
-                    fill
-                    className={styles.diamondA}
-                  />
+                  <Image src={"/diamond.svg"} fill className={styles.diamondA} />
                   <p>10 Diamond</p>
                 </div>
-              </div>
+              </section>
 
-              <div className={styles.diamond1}>
+              <section
+                onClick={() => setPrice(data.currency20.price)}
+                className={styles.diamond1}
+              >
                 <div className={styles.diamond}>
-                  <Image
-                    src={"/diamond.svg"}
-                    fill
-                    className={styles.diamondA}
-                  />
+                  <Image src={"/diamond.svg"} fill className={styles.diamondA} />
                   <p>20 Diamond</p>
                 </div>
-              </div>
+              </section>
 
-              <div className={styles.diamond1}>
+              <section
+                onClick={() => setPrice(data.currency30.price)}
+                className={styles.diamond1}
+              >
                 <div className={styles.diamond}>
-                  <Image
-                    src={"/diamond.svg"}
-                    fill
-                    className={styles.diamondA}
-                  />
+                  <Image src={"/diamond.svg"} fill className={styles.diamondA} />
                   <p>30 Diamond</p>
                 </div>
-              </div>
+              </section>
 
-              <div className={styles.diamond1}>
+              <section
+                onClick={() => setPrice(data.currency40.price)}
+                className={styles.diamond1}
+              >
                 <div className={styles.diamond}>
-                  <Image
-                    src={"/diamond.svg"}
-                    fill
-                    className={styles.diamondA}
-                  />
+                  <Image src={"/diamond.svg"} fill className={styles.diamondA} />
                   <p>40 Diamond</p>
                 </div>
-              </div>
+              </section>
 
-              <div className={styles.diamond1}>
+              <section
+                onClick={() => setPrice(data.currency60.price)}
+                className={styles.diamond1}
+              >
                 <div className={styles.diamond}>
-                  <Image
-                    src={"/diamond.svg"}
-                    fill
-                    className={styles.diamondA}
-                  />
+                  <Image src={"/diamond.svg"} fill className={styles.diamondA} />
                   <p>60 Diamond</p>
                 </div>
-              </div>
+              </section>
 
-              <div className={styles.diamond1}>
+              <section
+                onClick={() => setPrice(data.currency120.price)}
+                className={styles.diamond1}
+              >
                 <div className={styles.diamond}>
-                  <Image
-                    src={"/diamond.svg"}
-                    fill
-                    className={styles.diamondA}
-                  />
+                  <Image src={"/diamond.svg"} fill className={styles.diamondA} />
                   <p>120 Diamond</p>
                 </div>
-              </div>
+              </section>
 
-              <div className={styles.diamond1}>
+              <section
+                onClick={() => setPrice(data.currency200.price)}
+                className={styles.diamond1}
+              >
                 <div className={styles.diamond}>
-                  <Image
-                    src={"/diamond.svg"}
-                    fill
-                    className={styles.diamondA}
-                  />
+                  <Image src={"/diamond.svg"} fill className={styles.diamondA} />
                   <p>200 Diamond</p>
                 </div>
-              </div>
+              </section>
             </main>
           </div>
 
@@ -155,10 +151,12 @@ export default function Payment() {
             <main className={styles.container4}>
               <div className={styles.bank}>
                 <Image src={"/bri.svg"} fill className={styles.bri} />
+                <h1>{price}</h1>
               </div>
 
               <div className={styles.bank}>
                 <Image src={"/bca.svg"} fill className={styles.bva} />
+                <h1>{price}</h1>
               </div>
             </main>
           </div>
@@ -201,7 +199,9 @@ export default function Payment() {
                   height={60}
                   className={styles.cart}
                 />
-                <p><a href="lastpayment">Beli sekarang!</a></p>
+                <p>
+                  <a href="lastpayment">Beli sekarang!</a>
+                </p>
               </button>
             </Form.Item>
           </div>
@@ -210,3 +210,4 @@ export default function Payment() {
     </>
   );
 }
+

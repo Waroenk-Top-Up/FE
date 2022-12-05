@@ -29,7 +29,6 @@
     max-height: 100vh;
 }
 
-
 .coloumn1{
     width: 700px;
     height: 300px;
@@ -100,7 +99,7 @@
     display: flex;
     border: solid #2D2E03;
     text-align: center;
-    font-size: 13px;
+    font-size: 20px;
     border-radius: 20px;
     justify-content: center;
     padding-top: 5px;
@@ -123,7 +122,7 @@
 
 .coloumn3 {
     width: 700px;
-    height: 330px;
+    height: 380px;
     margin: 50px 0px 0px 30px;
     padding-left: 30px;
     padding-top: 40px;
@@ -143,8 +142,10 @@
 
 .bank{
     width: 250px;
-    height: 180px;
+    height: 240px;
     margin: 0px;
+    display: flex;
+    justify-content: center;
     border: solid #2D2E03;
     font-size: 13px;
     border-radius: 20px;
@@ -165,7 +166,6 @@
     width: 250px;
     height: 180px;
 }
-
 
 .container2{
     width: 500px;
@@ -196,7 +196,7 @@
     border: none;
     display: flex;
     background: #2D2E03;
-    color: rgb(0, 0, 0);
+    color: rgb(7, 7, 7);
     border-radius: 50px;
     margin: 150px auto 50px;
     padding: 2px 25px;

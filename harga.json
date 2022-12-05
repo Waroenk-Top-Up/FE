@@ -1,0 +1,33 @@
+{
+  "currency5": {
+    "price": "Rp.7. 000"
+  },
+
+  "currency10": {
+    "price": "Rp.13.000"
+  },
+
+  "currency20": {
+    "price": "Rp.25.000"
+  },
+
+  "currency30": {
+    "price": "Rp.33.000"
+  },
+
+  "currency40": {
+    "price": "Rp.50.000"
+  },
+
+  "currency60": {
+    "price": "Rp.73.000"
+  },
+
+  "currency120": {
+    "price": "Rp.110.000"
+  },
+
+  "currency200": {
+    "price": "Rp.170.000"
+  }
+}
