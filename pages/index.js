@@ -8,7 +8,7 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 
 const handleFinish = (data) => {
-  console.log(data);
+  window.open('/home','_SELF')
 };
 // REGISTER PAGE
 const Register = function ({ goToHome }) {
@@ -59,7 +59,6 @@ const Register = function ({ goToHome }) {
         </Form.Item>
         <Form.Item>
           <button
-            onClick={() => goToHome()}
             className={styles.masukreg}
             type="submit"
           >
@@ -106,7 +105,6 @@ const Login = function ({ goToHome }) {
         </Form.Item>
         <Form.Item>
           <button
-            onClick={() => goToHome()}
             className={styles.masuklog}
             type="submit"
           >
@@ -119,8 +117,6 @@ const Login = function ({ goToHome }) {
 };
 
 export default function LoginPage() {
-  const router = useRouter();
-  const goToHome = () => router.push("/home");
   const [onLogin, setLogin] = useState();
   return (
     <>
@@ -179,9 +175,9 @@ export default function LoginPage() {
             </div>
           </span>
           {onLogin ? (
-            <Login goToHome={goToHome} />
+            <Login />
           ) : (
-            <Register goToHome={goToHome} />
+            <Register />
           )}
 
           {/* QUICK ACCESS REG */}

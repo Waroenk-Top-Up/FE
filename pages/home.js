@@ -117,8 +117,8 @@ export default function Home() {
               <li>
                 <p>
                   Jika Anda sudah yakin dengan seluruh yang Anda pilih, Anda
-                  bisa langsung tekan tombol “Beli sekarang” atau tekan tombol
-                  “Kembali” jika Anda tidak yakin dengan yang Anda pilih.
+                  bisa langsung tekan tombol “Beli sekarang” atau tekan link 
+                  "Home" pada navbar jika Anda tidak yakin dengan yang Anda pilih.
                 </p>
               </li>
               <li>

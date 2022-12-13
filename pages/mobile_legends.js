@@ -6,7 +6,6 @@ import { Form, Input } from "antd";
 const data = require("../harga.json");
 
 const handleFinish = (data) => {
-  console.log(data);
 };
 export default function Payment() {
   const [price, setPrice] = useState(0);
